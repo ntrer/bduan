@@ -1,0 +1,1 @@
+{"version":3,"sources":["uni-app:///main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;kDAAA;AACA;AACA,yH;AACAA,UAAU,CAACC,qBAAD,CAAV,C","file":"pages/yinbao/goodsControl/goodsControl.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './pages/yinbao/goodsControl/goodsControl.vue'\ncreatePage(Page)"],"sourceRoot":""}

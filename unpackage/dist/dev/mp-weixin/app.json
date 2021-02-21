@@ -1,0 +1,160 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/tabbar/yinbao/yinbao",
+    "pages/tabbar/yinliu/yinliu",
+    "pages/tabbar/dingdan/dingdan",
+    "pages/tabbar/wode/wode"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/yinbao/",
+      "pages": [
+        "moreFenLei/moreFenLei",
+        "yongJinMingXi/yongJinMingXi",
+        "dingdanJinE/dingdanJinE",
+        "faBuRenWu/faBuRenWu",
+        "fans/fans",
+        "orderAnalyze/orderAnalyze",
+        "yuE/yuE",
+        "keLiuLieBian/keLiuLieBian",
+        "allActivity/allActivity",
+        "wxLive/wxLive",
+        "createLive/createLive",
+        "shopCircle/shopCircle",
+        "woDeYongJin/woDeYongJin",
+        "shopTask/shopTask",
+        "tuiJianYaoYue/tuiJianYaoYue",
+        "fabuTask/fabuTask",
+        "ziDingYiChaXun/ziDingYiChaXun",
+        "yongJinPeiZhi/yongJinPeiZhi",
+        "shouKuanMa/shouKuanMa"
+      ]
+    },
+    {
+      "root": "pages/activityDetail/",
+      "pages": [
+        "dazhuanpandetail/dazhuanpandetail",
+        "allRecord/allRecord",
+        "zhongJiangTongji/zhongJiangTongji",
+        "createPoster/createPoster",
+        "tuiJianDetail/tuiJianDetail",
+        "tuiJianRecord/tuiJianRecord",
+        "pinTuanDetail/pinTuanDetail",
+        "pintuanRecord/pintuanRecord",
+        "kanJiaDetail/kanJiaDetail",
+        "kanjiaRecord/kanjiaRecord",
+        "hongbaoDetail/hongbaoDetail",
+        "hongbaoRecord/hongbaoRecord",
+        "zadanDetail/zadanDetail",
+        "zadanRecord/zadanRecord",
+        "zadanZhongJiangTongji/zadanZhongJiangTongji",
+        "miaoshaDetail/miaoshaDetail",
+        "miaoshaRecord/miaoshaRecord"
+      ]
+    },
+    {
+      "root": "pages/person/",
+      "pages": [
+        "person/person",
+        "safe/safe",
+        "yinSi/yinSi",
+        "changePhone/changePhone"
+      ]
+    },
+    {
+      "root": "pages/shop/",
+      "pages": [
+        "shop/shop",
+        "shopSetting/shopSetting",
+        "moreGoods/moreGoods",
+        "goodsControl/goodsControl",
+        "goodsDetail/goodsDetail",
+        "createGoods/createGoods",
+        "orderDetail/orderDetail",
+        "selectCatagor/selectCatagor",
+        "xingHaoJuTiSetting/xingHaoJuTiSetting",
+        "xingHaoSeting/xingHaoSeting"
+      ]
+    },
+    {
+      "root": "pages/dianpu/",
+      "pages": [
+        "dianPuZiLiao/dianPuZiLiao",
+        "gouMaiFuWu/gouMaiFuWu",
+        "dianPuFenLei/dianPuFenLei",
+        "dianPu/dianPu",
+        "secondFenLei/secondFenLei"
+      ]
+    },
+    {
+      "root": "pages/yinliu2/",
+      "pages": [
+        "pintuan/pintuan",
+        "tuijian/tuijian",
+        "miaosha/miaosha",
+        "zajindan/zajindan"
+      ]
+    },
+    {
+      "root": "pages/yinliu/",
+      "pages": [
+        "dazhuanpan/dazhuanpan",
+        "kanjia/kanjia",
+        "faquan/faquan",
+        "hongbao/hongbao"
+      ]
+    },
+    {
+      "root": "pages/dingdan/",
+      "pages": [
+        "orderAnalyze/orderAnalyze",
+        "ziDingYiChaXun/ziDingYiChaXun"
+      ]
+    },
+    {
+      "root": "pages/wode/",
+      "pages": [
+        "fans/fans"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#FF7200",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/yinbao/yinbao",
+        "iconPath": "static/tabbar/yinbao.png",
+        "selectedIconPath": "static/tabbar/yinbao_checked.png",
+        "text": "引爆客流"
+      },
+      {
+        "pagePath": "pages/tabbar/yinliu/yinliu",
+        "iconPath": "static/tabbar/yinliu.png",
+        "selectedIconPath": "static/tabbar/yinliu_checked.png",
+        "text": "引流系统"
+      },
+      {
+        "pagePath": "pages/tabbar/dingdan/dingdan",
+        "iconPath": "static/tabbar/dingdan.png",
+        "selectedIconPath": "static/tabbar/dingdan_checked.png",
+        "text": "订单收益"
+      },
+      {
+        "pagePath": "pages/tabbar/wode/wode",
+        "iconPath": "static/tabbar/fensi.png",
+        "selectedIconPath": "static/tabbar/fensi_checked.png",
+        "text": "我的粉丝"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "订单收益分析",
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "uni-load-more": "/components/uni-load-more/uni-load-more",
+    "u-picker": "/uview-ui/components/u-picker/u-picker",
+    "divider": "/components/divider",
+    "free-avater": "/components/free-avater"
+  }
+}
