@@ -24,7 +24,7 @@
 					
 					<view class="rounded-1 flex align-center justify-center mr-4 mb-2" style="height: 50rpx;width: 140rpx;background-color: #FF7200;" @click="toBuy()">
 						
-						<text style="font-size: 26upx;color: #fff;">立即购买</text>
+						<text style="font-size: 26upx;color: #fff;">去开通</text>
 						
 					</view>
 				</view>
@@ -44,7 +44,7 @@
 		<view class="flex align-center justify-between ml-4 mr-4" style="height: 100rpx;">
 			<text class="text-color font-normal">预览店铺首页</text>
 			<view class="flex align-center justify-between">
-				<text style="color: #9F9F9F;">小程序</text>
+				<text style="color: #9F9F9F;"></text>
 				<uni-icon  :size="20" color="#000" type="arrowright" />
 			</view>
 		</view>
@@ -82,8 +82,8 @@
 		<view class="flex align-center justify-between ml-4 mr-4" style="height: 100rpx;" @click="toYaoYue()">
 			<text class="text-color font-normal">邀请好友开店</text>
 			<view class="flex align-center justify-between">
-				<text style="color: #9F9F9F;">奖励</text>
-				<text class="text-checked-color ml-1">999元</text>
+				<text style="color: #9F9F9F;"></text>
+				<text class="text-checked-color ml-1"></text>
 				<uni-icon  :size="20" color="#000" type="arrowright" />
 			</view>
 		</view>

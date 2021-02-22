@@ -1,6 +1,6 @@
 <template>
 	<view style="background-color: #F4F4F4;min-height: 100vh;">
-		<u-navbar  :background="background" title-color="#fff" title="订单收益" :isBack="false"></u-navbar>
+		<u-navbar  :background="background" title-color="#fff" title="订单收益" :isBack="false" :border-bottom="false"></u-navbar>
 	     <view class="" style="height: 240rpx;background-color: #FF7200;"></view>
 	     <!-- 浮动块 -->
 	     <view class="ml-2 mr-2" style="height: 340rpx; background: #FFFFFF;box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);border-radius: 8px; margin-top: -150rpx;">
@@ -102,7 +102,8 @@
 		data() {
 			return {
 				background:{
-					backgroundImage: 'linear-gradient(0deg, #FF7200 0%, #FFB183 100%)'
+					backgroundColor: '#FF7200',
+					// backgroundImage: 'linear-gradient(0deg, #FF7200 0%, #FFB183 100%)'
 				},
 				tabIndex:0,
 				time:"2020.01.20",

@@ -496,26 +496,34 @@ color: #FF7200;
 .border-dark {border-color: #343a40;}
 .border-white {border-color: #FFFFFF;}
 /* 圆角 */
-.rounded { border-radius: 8rpx;}
-.rounded-1 { border-radius: 20rpx;}
+.rounded { -webkit-border-radius: 8rpx; border-radius: 8rpx;}
+.rounded-1 { -webkit-border-radius: 20rpx; border-radius: 20rpx;}
 .rounded-top {
-  border-top-left-radius: 8rpx;
-  border-top-right-radius: 8rpx;
+  -webkit-border-top-left-radius: 8rpx;
+          border-top-left-radius: 8rpx;
+  -webkit-border-top-right-radius: 8rpx;
+          border-top-right-radius: 8rpx;
 }
 .rounded-right {
-  border-top-right-radius: 8rpx;
-  border-bottom-right-radius: 8rpx;
+  -webkit-border-top-right-radius: 8rpx;
+          border-top-right-radius: 8rpx;
+  -webkit-border-bottom-right-radius: 8rpx;
+          border-bottom-right-radius: 8rpx;
 }
 .rounded-bottom {
-  border-bottom-right-radius: 8rpx;
-  border-bottom-left-radius: 8rpx;
+  -webkit-border-bottom-right-radius: 8rpx;
+          border-bottom-right-radius: 8rpx;
+  -webkit-border-bottom-left-radius: 8rpx;
+          border-bottom-left-radius: 8rpx;
 }
 .rounded-left {
-  border-top-left-radius: 8rpx;
-  border-bottom-left-radius: 8rpx;
+  -webkit-border-top-left-radius: 8rpx;
+          border-top-left-radius: 8rpx;
+  -webkit-border-bottom-left-radius: 8rpx;
+          border-bottom-left-radius: 8rpx;
 }
-.rounded-circle { border-radius: 100rpx;}
-.rounded-0 { border-radius: 0;}
+.rounded-circle { -webkit-border-radius: 100rpx; border-radius: 100rpx;}
+.rounded-0 { -webkit-border-radius: 0; border-radius: 0;}
 /* 显示 */
 .d-none{ display: none;
 }

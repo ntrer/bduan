@@ -132,7 +132,8 @@
 		data() {
 			return {
 				background:{
-					backgroundImage: 'linear-gradient(0deg, #FF7200 0%, #FFB183 100%)'
+					backgroundColor: '#FF7200',
+					// backgroundImage: 'linear-gradient(0deg, #FF7200 0%, #FFB183 100%)'
 				},
 				monthAdd:0,
 				monthConsumptionFansNum:0,

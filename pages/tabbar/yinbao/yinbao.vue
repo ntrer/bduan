@@ -1,6 +1,6 @@
 <template>
 	<view style="background-color: #F4F4F4;min-height: 100vh;">
-		<u-navbar  :background="background" title-color="#fff" :isBack="false">
+		<u-navbar  :background="background" title-color="#fff" :isBack="false" :border-bottom="false">
 			<view class="flex align-center ml-4" @click="toShopList()">
 				<free-avater size="50" style="margin-right: 10rpx;margin-top: 5rpx;" :src="'https://'+merchantImage"></free-avater>
 				<text class="map-wrap-text mr-1 ml-1" style="font-weight: 600;color: #fff;">{{merchantName}}</text>
@@ -30,7 +30,7 @@
 	</view>
 	
 	<!-- 第一块 -->
-	<view class="ml-3 mr-3 flex  flex-column pt-4" style="height: 450rpx;background: #FFFFFF;box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);border-radius: 30px; margin-top: -150rpx;">
+	<view class="ml-3 mr-3 flex  flex-column pt-4" style="height: 450rpx;background: #FFFFFF;box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);border-radius: 15px; margin-top: -150rpx;">
 		
 		<!-- 3个功能块 -->
 		<view class=" flex flex-row">
@@ -89,7 +89,7 @@
 	</view>
 	
 	<!-- 第二块 -->
-	<view class="mt-4 ml-3 mr-3" style="height: 560rpx;background: #FFFFFF;box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);border-radius: 30px; ">
+	<view class="mt-4 ml-3 mr-3" style="height: 560rpx;background: #FFFFFF;box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);border-radius: 15px; ">
 		
 		<!-- 标题 -->
 		<view class="pt-4 pl-4 flex align-center justify-between" >
@@ -141,7 +141,7 @@
 	</view>
 	
 	<!-- 第三块 -->
-	<view class="mt-4 ml-3 mr-3 " style="min-height: 600rpx;background: #FFFFFF;box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);border-radius: 30px;">
+	<view class="mt-4 ml-3 mr-3 " style="min-height: 600rpx;background: #FFFFFF;box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);border-radius: 15px;">
 		
 		
 		<!-- 标题 -->
@@ -231,7 +231,8 @@ color: #F23132;;">家同行正在使用</text>
 		data() {
 			return {
 				background:{
-					backgroundImage: 'linear-gradient(0deg, #FF7200 0%, #FFB183 100%)'
+					backgroundColor: '#FF7200',
+					// backgroundImage: 'linear-gradient(0deg, #FF7200 0%, #FFB183 100%)'
 				},
 				tabIndex:0,
 				offsettop:0,

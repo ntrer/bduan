@@ -211,6 +211,7 @@
 		mounted() {
 			var date = new Date();
 			this.month = date.getMonth() + 1;
+			this.month2 = date.getMonth() + 1;
 			if (this.month < 10) {
 				this.month = "0" + (date.getMonth() + 1).toString() + "月";
 			} else {
@@ -226,17 +227,18 @@
 				this.month2 = (date.getMonth() + 1).toString() 
 			}
 			
-			if (this.day2 < 10) {
+			this.year2 = date.getFullYear().toString();
+			this.day2 = date.getDate().toString();
+			
+			if (this.day < 10) {
 				this.day2 = "0" + date.getDate().toString() ;
 			} else {
-				this.day2 = date.getDate()().toString() 
+				this.day2 = date.getDate().toString() 
 			}
-			
-			this.year2 = date.getFullYear().toString() 
 			this.searchDayTime=this.year2+"-"+this.month2 +"-"+this.day2;
 			
 			this.getDayData()
-			console.log(this.day2)
+			console.log(this.searchDayTime)
 		},
 
        onReachBottom() {

@@ -9,8 +9,7 @@
 		
 		
 		<!-- 浮动块 -->
-		<view class="ml-3 mr-3 pt-5" style="height: 280rpx;background: linear-gradient(90deg, #F33132 0%, #FFB183 100%);
-box-shadow: 0rpx 0rpx 32rpx 0rpx rgba(244, 49, 50, 0.4);border-radius: 10rpx;margin-top: -150rpx;">
+		<view class="ml-3 mr-3 pt-5 main-bg-color" style="height: 280rpx;box-shadow: 0rpx 0rpx 32rpx 0rpx rgba(244, 49, 50, 0.4);border-radius: 10rpx;margin-top: -150rpx;">
 			
 			<text style="font-size: 32rpx;font-weight: bold;color: #fff; margin-left: 42rpx;">店铺收益</text>
 			<!-- 4个数据块 -->

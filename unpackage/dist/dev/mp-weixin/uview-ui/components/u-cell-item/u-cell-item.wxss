@@ -24,7 +24,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.u-cell.data-v-56e53934 {
+.u-cell.data-v-65423b64 {
 
   display: -webkit-box;
   display: -webkit-flex;
@@ -48,20 +48,20 @@
   background-color: #fff;
   text-align: left;
 }
-.u-cell_title.data-v-56e53934 {
+.u-cell_title.data-v-65423b64 {
   font-size: 28rpx;
 }
-.u-cell__left-icon-wrap.data-v-56e53934 {
+.u-cell__left-icon-wrap.data-v-65423b64 {
   margin-right: 10rpx;
   font-size: 32rpx;
 }
-.u-cell__right-icon-wrap.data-v-56e53934 {
+.u-cell__right-icon-wrap.data-v-65423b64 {
   margin-left: 10rpx;
   color: #969799;
   font-size: 28rpx;
 }
-.u-cell__left-icon-wrap.data-v-56e53934,
-.u-cell__right-icon-wrap.data-v-56e53934 {
+.u-cell__left-icon-wrap.data-v-65423b64,
+.u-cell__right-icon-wrap.data-v-65423b64 {
 
   display: -webkit-box;
   display: -webkit-flex;
@@ -76,7 +76,7 @@
           align-items: center;
   height: 48rpx;
 }
-.u-cell-border.data-v-56e53934:after {
+.u-cell-border.data-v-65423b64:after {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -89,30 +89,30 @@
   -webkit-transform: scaleY(0.5);
           transform: scaleY(0.5);
 }
-.u-cell-border.data-v-56e53934 {
+.u-cell-border.data-v-65423b64 {
   position: relative;
 }
-.u-cell__label.data-v-56e53934 {
+.u-cell__label.data-v-65423b64 {
   margin-top: 6rpx;
   font-size: 26rpx;
   line-height: 36rpx;
   color: #909399;
   word-wrap: break-word;
 }
-.u-cell__value.data-v-56e53934 {
+.u-cell__value.data-v-65423b64 {
   overflow: hidden;
   text-align: right;
   vertical-align: middle;
   color: #909399;
   font-size: 26rpx;
 }
-.u-cell__title.data-v-56e53934,
-.u-cell__value.data-v-56e53934 {
+.u-cell__title.data-v-65423b64,
+.u-cell__value.data-v-65423b64 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
 }
-.u-cell--required.data-v-56e53934 {
+.u-cell--required.data-v-65423b64 {
   overflow: visible;
 
   display: -webkit-box;
@@ -127,7 +127,7 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.u-cell--required.data-v-56e53934:before {
+.u-cell--required.data-v-65423b64:before {
   position: absolute;
   content: '*';
   left: 8px;
@@ -135,7 +135,7 @@
   font-size: 14px;
   color: #fa3534;
 }
-.u-cell_right.data-v-56e53934 {
+.u-cell_right.data-v-65423b64 {
   line-height: 1;
 }
 

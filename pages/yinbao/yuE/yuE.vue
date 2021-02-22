@@ -100,7 +100,13 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);">
 			</view>
 		</u-modal>
 		
-		 <uni-load-more :status="status" :content-text="contentText" v-if="listData.length>0" />
+		<view v-if="nodata==true"  class="flex align-center justify-center flex-column" style="font-size: 28rpx;color: #9F9F9F;margin-top: 200rpx;">
+			<image src="../../../static/common/no_yongjin_data.png" style="height: 160rpx;width: 160rpx;"></image>
+			<text style="margin-top: 20rpx;">目前暂无数据</text>
+		</view>
+		
+		
+		 <uni-load-more :status="status" :content-text="contentText" v-if="!nodata"  />
 		
 	</view>
 </template>
@@ -140,6 +146,7 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);">
 					contentrefresh: '加载中',
 					contentnomore: '没有更多'
 				},
+				nodata:false,
 				listData:[]
 			}
 		},
@@ -197,6 +204,7 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);">
 					console.log(this.page)
 					if(pages>1&&this.page<=pages){
 						this.listData = this.reload ? list : this.listData.concat(list);
+						this.nodata=false;
 					}
 					else if(pages==0){
 						this.listData=[];
@@ -206,6 +214,7 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);">
 					else if(pages==1){
 						this.listData = list
 						this.status ='noMore'
+						this.nodata=false;
 					}
 					else{
 						this.status ='noMore'

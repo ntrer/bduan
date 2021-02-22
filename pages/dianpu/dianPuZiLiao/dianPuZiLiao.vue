@@ -114,7 +114,7 @@
 		<view class="pl-2 pr-2">
 			<divider :height="4"></divider>
 		</view>
-
+        
 		<divider :height="30"></divider>
 
 		<view class="flex align-center justify-center" style="height: 80rpx; background-color: #FF7200;" @click="saveDianpu()">
@@ -177,6 +177,7 @@
 				address:"",
 				phoneNumber:"",
 				wxNum:"",
+				bgImage:"",
 				wxImage: "",
 				showCity: false,
 				showTime: false,
@@ -184,7 +185,6 @@
 				fenlei: "选择分类",
 				startTime: "选择开始时间",
 				endTime: "选择结束时间",
-				bgImage: "../../../static/common/dianpu_bg.jpg",
 				id: "",
 				LogInfo: {},
 				uptdateData: {
@@ -268,8 +268,8 @@
 					this.uptdateData.business_end_ours=this.endTime
 					this.phoneNumber=this.getData.merchant.juridical_person_phone||""
 					this.wxNum=this.getData.merchant.wx_num||""
-					this.bgImage="https://"+this.getData.merchant.merchant_image||""
-					this.wxImage="https://"+this.getData.merchant.wx_qr_code||""
+					this.bgImage=this.getData.merchant.merchant_image==null?"../../../static/common/dianpu_bg.jpg":"https://"+this.getData.merchant.merchant_image
+					this.wxImage=this.getData.merchant.wx_qr_code==null?"":"https://"+this.getData.merchant.wx_qr_code
 					this.uptdateData.first_classification_id=this.getData.merchant.first_classification_id
 					this.uptdateData.second_classification_id=this.getData.merchant.second_classification_id
 					
