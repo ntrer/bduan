@@ -3,12 +3,12 @@
 		<u-navbar title="个人中心"  :background="background" title-color="#000" :isBack="true"></u-navbar>
 		
 		<!-- 同步微信头像 -->
-		<view class="flex align-center justify-between pl-2 pr-2" style="background-color: #FECACB;height: 100rpx;">
+		<!-- <view class="flex align-center justify-between pl-2 pr-2" style="background-color: #FECACB;height: 100rpx;">
 			<text style="font-size: 30rpx;color: #FB7273;font-weight: 600;">同步微信头像、昵称方便好友辨别您的身份</text>
 			<view class="rounded flex align-center justify-center" style="background-color: #FF7200;width: 100rpx; height: 48rpx;">
 				<text style="color: #fff;">同步</text>
 			</view>
-		</view>
+		</view> -->
 		
 		<!-- 基础信息列表 -->
 		<!-- 头像 -->

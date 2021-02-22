@@ -320,6 +320,9 @@ var _util = _interopRequireDefault(__webpack_require__(/*! @/common/util.js */ 4
         minute: false,
         second: false },
 
+      orderSumPayPrice: 0,
+      orderListComplete: 0,
+      orderSumPriceCommission: 0,
       show: false,
       month: "",
       day: "",
@@ -468,6 +471,9 @@ var _util = _interopRequireDefault(__webpack_require__(/*! @/common/util.js */ 4
 
         var pages = res.data.orderList.pages;
 
+        _this.orderListComplete = res.data.orderSumPriceCommission;
+        _this.orderSumPayPrice = res.data.orderSumPayPrice;
+        _this.orderSumPriceCommission = res.data.orderSumPriceCommission;
 
         if (pages > 1 && _this.page <= pages) {
           _this.dataList = _this.reload ? list : _this.dataList.concat(list);
@@ -515,7 +521,9 @@ var _util = _interopRequireDefault(__webpack_require__(/*! @/common/util.js */ 4
         var list = res.data.orderList.records;
         var pages = res.data.orderList.pages;
 
-
+        _this2.orderListComplete = res.data.orderSumPriceCommission;
+        _this2.orderSumPayPrice = res.data.orderSumPayPrice;
+        _this2.orderSumPriceCommission = res.data.orderSumPriceCommission;
         if (pages > 1 && _this2.page <= pages) {
           _this2.dataList = _this2.reload ? list : _this2.dataList.concat(list);
           _this2.nodata = false;

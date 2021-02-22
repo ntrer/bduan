@@ -506,8 +506,8 @@ var _util = _interopRequireDefault(__webpack_require__(/*! @/common/util.js */ 4
     },
 
     toYuE: function toYuE() {
-      uni.navigateTo({
-        url: '../../yinbao/dingdanJinE/dingdanJinE' });
+      uni.switchTab({
+        url: '../../tabbar/dingdan/dingdan' });
 
     },
 

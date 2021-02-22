@@ -188,6 +188,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
       phone: "17677777777",
       newPhone: "",
+      yzmCode: "",
       yzm: "获取验证码",
       second: 60 };
 

@@ -9,7 +9,7 @@
 		<view class="flex align-center pl-2 pr-2" style="height: 100rpx;">
 
 			<view class="text-color" style="font-size: 32upx;">手机号</view>
-			<input style="margin-left: 20rpx; font-size: 32upx;" type="text" v-model="newPhone" placeholder="请输入手机号"
+			<input style="margin-left: 20rpx; font-size: 32upx;" type="number" v-model="newPhone" maxlength="11" placeholder="请输入手机号"
 			 placeholder-style="color: #9F9F9F;" />
 		</view>
 
@@ -21,7 +21,7 @@
 
 			<view class=" flex align-center justify-between">
 				<view class="text-color" style="font-size: 32upx;">验证码</view>
-				<input style="margin-left: 20rpx; font-size: 32upx;" type="text" v-model="newPhone" placeholder="请输入验证码"
+				<input style="margin-left: 20rpx; font-size: 32upx;" type="number" v-model="yzmCode" maxlength="6" placeholder="请输入验证码"
 				 placeholder-style="color: #9F9F9F;" />
 			</view>
 
@@ -54,6 +54,7 @@
 				},
 				phone: "17677777777",
 				newPhone: "",
+				yzmCode:"",
 				yzm: "获取验证码",
 				second: 60
 			}

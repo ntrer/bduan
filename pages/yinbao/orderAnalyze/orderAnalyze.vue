@@ -33,7 +33,7 @@
 		</view>
 		<view class="flex align-center justify-center mt-2">
 			<text style="font-size: 34rpx; font-weight: 600;">￥</text>
-			<text style="font-size: 50rpx; font-weight: 600;">999</text>
+			<text style="font-size: 50rpx; font-weight: 600;">{{orderSumPayPrice==null?0:orderSumPayPrice/100}}</text>
 		</view>
 
 
@@ -41,7 +41,7 @@
 		<view class="flex align-center justify-between mt-4" style="margin-left: 80rpx;margin-right: 80rpx;">
 			<view class="flex align-center flex-column">
 				<text style="font-size: 36rpx; color: #9F9F9F;">收款笔数</text>
-				<text style="font-size: 36rpx; font-weight: 600;" class="mt-1">1</text>
+				<text style="font-size: 36rpx; font-weight: 600;" class="mt-1">{{orderListComplete}}</text>
 			</view>
 
 			<view class="flex align-center flex-column">
@@ -51,7 +51,7 @@
 						<text class="text-center" style="width: 36rpx;height: 36rpx;color: #FFFFFF;">!</text>
 					</view>
 				</view>
-				<text style="font-size: 36rpx; font-weight: 600;" class="mt-1">￥99</text>
+				<text style="font-size: 36rpx; font-weight: 600;" class="mt-1">￥{{orderSumPriceCommission/100}}</text>
 			</view>
 
 		</view>
@@ -180,6 +180,9 @@
 					minute: false,
 					second: false
 				},
+				orderSumPayPrice:0,
+				orderListComplete:0,
+				orderSumPriceCommission:0,
 				show: false,
 				month: "",
 				day: "",
@@ -328,6 +331,9 @@
 					
 					let pages=res.data.orderList.pages;
 					
+					this.orderListComplete=res.data.orderSumPriceCommission
+					this.orderSumPayPrice=res.data.orderSumPayPrice
+					this.orderSumPriceCommission=res.data.orderSumPriceCommission
 					
 					if(pages>1&&this.page<=pages){
 						this.dataList = this.reload ? list : this.dataList.concat(list);
@@ -375,7 +381,9 @@
 				let list = res.data.orderList.records
 				let pages=res.data.orderList.pages;
 				
-				
+				this.orderListComplete=res.data.orderSumPriceCommission
+				this.orderSumPayPrice=res.data.orderSumPayPrice
+				this.orderSumPriceCommission=res.data.orderSumPriceCommission
 				if(pages>1&&this.page<=pages){
 					this.dataList = this.reload ? list : this.dataList.concat(list);
 					this.nodata=false;

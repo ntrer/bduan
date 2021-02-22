@@ -364,8 +364,8 @@ color: #F23132;;">家同行正在使用</text>
 			},
 			
 			toYuE(){
-				uni.navigateTo({
-					url:'../../yinbao/dingdanJinE/dingdanJinE'
+				uni.switchTab({
+					url:'../../tabbar/dingdan/dingdan'
 				})
 			},
 			
